@@ -17,6 +17,13 @@ function show_board(){
             }
 
         });
+
+        board[x].addEventListener("mouseover",function(){
+            board[x].classList.add("hover");
+        });
+        board[x].addEventListener("mouseleave",function(){
+            board[x].classList.remove("hover");
+        });
     }
 }
 
